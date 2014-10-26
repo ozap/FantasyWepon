@@ -1,0 +1,50 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	AN\AN11.suf
+	AN\AN12.suf
+	P1\P103.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( -13.000  64.500  32.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	2: atr white { col ( 1.000 ) amb ( 0.330 ) dif ( 0.800 ) spc ( 0.050 0.100 0.000 ) }
+	3: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -10 -69 -70 )
+	{	mov ( -33.7051 -193.941 1889.7 ) eye deg( 45 ) }
+	{	mov ( -36.3513 -195.908 0.445789 ) target }
+	{	mov ( 253.245 171.343 0 ) rotz ( -127.892 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.244128 0.2 0.5 ) obj an12 /* "AN\AN12.suf" atr "brown" */
+	}
+	{	mov ( 0 241 0 ) rotz ( -90 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.6 0.411585 0.6 ) obj an11 /* "AN\AN11.suf" atr "brown" */
+	}
+	{	mov ( -253.245 171.343 0 ) rotz ( 127.892 ) roty ( 0 ) rotx ( -90 )
+		scal ( -0.244128 0.2 0.5 ) obj an12 /* "AN\AN12.suf" atr "brown" */
+	}
+	{	mov ( 0 241 0 ) rotz ( 90 ) roty ( 0 ) rotx ( -90 )
+		scal ( -0.6 0.411585 0.6 ) obj an11 /* "AN\AN11.suf" atr "brown" */
+	}
+	{	mov ( 0 -281 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 6.3 0.02 1 ) obj P103 /* "P1\P103.suf" atr "white" */
+	}
+	{	mov ( 0 -281 0 ) rotz ( 0 ) roty ( 0 ) rotx ( -90 )
+		scal ( -6.3 0.02 1 ) obj P103 /* "P1\P103.suf" atr "white" */
+	}
+}
