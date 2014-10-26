@@ -1,0 +1,56 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	P2\P201.suf
+	P2\P215.suf
+	P3\P305.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: (   0.000   0.000   4.500 )
+	DisplayScale: 0.500000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	2: atr white { col ( 1.000 ) amb ( 0.330 ) dif ( 0.800 ) spc ( 0.050 0.100 0.000 ) }
+	3: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 )  51 -48 -70 )
+	{	mov ( 594.61 2226.93 769.361 ) eye deg( 45 ) }
+	{	mov ( 674.212 -570.323 -1.44319 ) target }
+	{	mov ( -547 -1 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.0457464 0.0457464 4.9 ) obj P215 /* "P2\P215.suf" atr "brown" */
+	}
+	{	mov ( 413 -1 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.363058 0.363058 1.12832 ) obj P201 /* "P2\P201.suf" atr "silver" */
+	}
+	{	mov ( -497 0 0 ) rotz ( 90 ) roty ( -90 ) rotx ( 180 )
+		scal ( 0.1 0.4 0.0164145 ) obj P305 /* "P3\P305.suf" atr "white" */
+	}
+	{	mov ( -527 0 39 ) rotz ( -90 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.1 -0.4 0.0164145 ) obj P305 /* "P3\P305.suf" atr "white" */
+	}
+	{	mov ( -497 -0.349945 0.301515 ) rotz ( 90 ) roty ( 30 ) rotx ( 0 )
+		scal ( 0.1 -0.4 0.0164145 ) obj P305 /* "P3\P305.suf" atr "white" */
+	}
+	{	mov ( -527 33.425 -19.1985 ) rotz ( -90 ) roty ( -30 ) rotx ( -180 )
+		scal ( 0.1 0.4 0.0164145 ) obj P305 /* "P3\P305.suf" atr "white" */
+	}
+	{	mov ( -497 0.349945 0.301515 ) rotz ( -90 ) roty ( 30 ) rotx ( 0 )
+		scal ( 0.1 0.4 0.0164145 ) obj P305 /* "P3\P305.suf" atr "white" */
+	}
+	{	mov ( -527 -33.425 -19.1985 ) rotz ( 90 ) roty ( -30 ) rotx ( 180 )
+		scal ( 0.1 -0.4 0.0164145 ) obj P305 /* "P3\P305.suf" atr "white" */
+	}
+}
