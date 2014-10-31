@@ -1,6 +1,7 @@
 /*							Parts Assembler
                                   Version 2.04.080709(:
 Parts: 
+	AN\AN09.suf
 	AN\AN11.suf
 	P1\P114.suf
 Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
@@ -24,11 +25,11 @@ Palette:
 */
 fram
 {
-	light pal( rgb ( 1.00 1.00 1.00 ) -37  59 -70 )
-	{	mov ( 244.308 -8.4168 1774.01 ) eye deg( 45 ) }
+	light pal( rgb ( 1.00 1.00 1.00 ) -47  52 -70 )
+	{	mov ( 244.834 -8.4895 1774.01 ) eye deg( 45 ) }
 	{	mov ( 244.986 -5.44786 29.0997 ) target }
 	{	mov ( 17.1573 -9.59084 0 ) rotz ( 88.3378 ) roty ( 0 ) rotx ( 90 )
-		scal ( 0.3 0.1 1 ) obj an11 /* "AN\AN11.suf" atr "silver" */
+		scal ( 0.234659 0.1 1 ) obj an11 /* "AN\AN11.suf" atr "silver" */
 	}
 	{	mov ( 17.1573 -9.59084 0 ) rotz ( -110 ) roty ( 0 ) rotx ( 90 )
 		scal ( 0.27626 0.1 0.241916 ) obj an11 /* "AN\AN11.suf" atr "brown" */
@@ -36,13 +37,16 @@ fram
 	{	mov ( -121.239 -17.7175 0 ) rotz ( -150.138 ) roty ( 90 ) rotx ( 0 )
 		scal ( 0.0566662 0.113562 0.284801 ) obj P114 /* "P1\P114.suf" atr "yellow" */
 	}
-	{	mov ( 3.53553 -45.9619 0 ) rotz ( -174.113 ) roty ( 0 ) rotx ( 90 )
-		scal ( -0.240029 -0.204996 0.157596 ) obj an11 /* "AN\AN11.suf" atr "yellow" */
-	}
 	{	mov ( -63.2304 -91.5147 0 ) rotz ( 90 ) roty ( 0 ) rotx ( -90 )
-		scal ( 0.2 0.204996 0.122018 ) obj an11 /* "AN\AN11.suf" atr "yellow" */
+		scal ( 0.2 0.1 0.122018 ) obj an11 /* "AN\AN11.suf" atr "yellow" */
 	}
 	{	mov ( -63.3417 -90.8076 0 ) rotz ( -90 ) roty ( 0 ) rotx ( -90 )
-		scal ( -0.2 0.204996 0.122018 ) obj an11 /* "AN\AN11.suf" atr "yellow" */
+		scal ( -0.2 0.1 0.122018 ) obj an11 /* "AN\AN11.suf" atr "yellow" */
+	}
+	{	mov ( 10.6066 -30.201 0 ) rotz ( 0 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.1 0.311942 0.0984027 ) obj an09 /* "AN\AN09.suf" atr "yellow" */
+	}
+	{	mov ( 10.6066 30.201 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 90 )
+		scal ( 0.1 -0.311942 0.0984027 ) obj an09 /* "AN\AN09.suf" atr "yellow" */
 	}
 }

@@ -6,8 +6,8 @@ Parts:
 Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
 BackGround: "Fine_Basin"
 Info:
-	DisplayOffset: (  42.337  40.000   0.000 )
-	DisplayScale: 1.414213562373
+	DisplayOffset: (  14.968  14.142   0.000 )
+	DisplayScale: 0.500000000000
 	MeshFlag: 1
 	MeshSpacing: 200
 	ShowStatus: 1
@@ -18,9 +18,9 @@ Info:
 	SelectedOnly: 0
 	DispRelative: 0
 Palette:
-	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) colormap ( "L3\nature\scale_fish.png" ) bumpmap ( "L3\nature\scale_fish.png" ) mapsize ( 0 0 1 1 ) }
-	1: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "L3\effect\circle1.png" 0.600 1.000 ) mapsize ( 0 0 1 1 ) }
-	2: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( JYUTAN.PIC ) mapsize ( 0 0 1 1 ) }
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr silver { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	2: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
 */
 fram
 {
@@ -28,7 +28,7 @@ fram
 	{	mov ( 244.308 -8.4168 1774.01 ) eye deg( 45 ) }
 	{	mov ( 244.986 -5.44786 29.0997 ) target }
 	{	mov ( 17.1573 -9.59084 0 ) rotz ( 88.3378 ) roty ( 0 ) rotx ( 90 )
-		scal ( 0.3 0.1 1 ) obj an11 /* "AN\AN11.suf" atr "silver" */
+		scal ( 0.234659 0.1 1 ) obj an11 /* "AN\AN11.suf" atr "silver" */
 	}
 	{	mov ( 17.1573 -9.59084 0 ) rotz ( -110 ) roty ( 0 ) rotx ( 90 )
 		scal ( 0.27626 0.1 0.241916 ) obj an11 /* "AN\AN11.suf" atr "brown" */
