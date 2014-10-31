@@ -1,0 +1,46 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	P1\P114.suf
+	P3\P316.suf
+	P4\P411.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( -106.840 -25.330   0.000 )
+	DisplayScale: 0.707106781186
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	2: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -65 -26  70 )
+	{	mov ( 1418.15 -416.666 -616.471 ) eye deg( 45 ) }
+	{	mov ( 336.424 50.7526 -0.421307 ) target }
+	{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.5 1.5 0.6 ) obj P316 /* "P3\P316.suf" atr "brown" */
+	}
+	{	mov ( 0 0 55.1543 ) rotz ( 14.9337 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.23775 1.23775 0.295842 ) obj P114 /* "P1\P114.suf" atr "silver" */
+	}
+	{	mov ( 0 0 104.829 ) rotz ( 14.9337 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.246694 0.246694 0.12283 ) obj P114 /* "P1\P114.suf" atr "silver" */
+	}
+	{	mov ( 0 0 62.2254 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.4 0.5 1.2 ) obj P411 /* "P4\P411.suf" atr "silver" */
+	}
+	{	mov ( 0 0 62.2254 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.4 -0.5 1.2 ) obj P411 /* "P4\P411.suf" atr "silver" */
+	}
+}
