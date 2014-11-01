@@ -1,0 +1,75 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	P2\P214.suf
+	P2\P215.suf
+	P3\P301.suf
+	P3\P305.suf
+	P4\P414.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( 935.376   0.000  17.000 )
+	DisplayScale: 0.500000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) colormap ( "L3\effect\circle1.png" 0.500 1.000 ) mapsize ( 0 0 1 1 ) }
+	1: atr dbrown { col ( rgb ( 0.580 0.130 0.160 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	2: atr dkblue { col ( rgb ( 0.150 0.200 0.250 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	3: atr noname { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	4: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "L3\effect\circle1.png" 0.500 1.000 ) mapsize ( 0 0 1 1 ) }
+	5: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -14  69 -70 )
+	{	mov ( -997.241 -166.108 4354.03 ) eye deg( 45 ) }
+	{	mov ( -889.935 -0.0454299 -0.0000910161 ) target }
+	{	mov ( 220 -100 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.2 0.3 -0.2 ) obj P414 /* "P4\P414.suf" atr "silver" */
+	}
+	{	mov ( 220 100 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.2 -0.3 -0.2 ) obj P414 /* "P4\P414.suf" atr "silver" */
+	}
+	{	mov ( 520 0 0 ) rotz ( -180 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.3 0.33192 0.2 ) obj P305 /* "P3\P305.suf" atr "silver" */
+	}
+	{	mov ( 600.234 0 -10 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.8 0.58193 0.2 ) obj P301 /* "P3\P301.suf" atr "silver" */
+	}
+	{	mov ( 220 0 -100 ) rotz ( 0 ) roty ( 0 ) rotx ( -90 )
+		scal ( 1.2 -0.3 -0.2 ) obj P414 /* "P4\P414.suf" atr "silver" */
+	}
+	{	mov ( 220 0 100 ) rotz ( 0 ) roty ( 0 ) rotx ( -90 )
+		scal ( 1.2 0.3 -0.2 ) obj P414 /* "P4\P414.suf" atr "silver" */
+	}
+	{	mov ( 520 0 0 ) rotz ( 180 ) roty ( 0 ) rotx ( 90 )
+		scal ( 1.3 -0.33192 0.2 ) obj P305 /* "P3\P305.suf" atr "silver" */
+	}
+	{	mov ( 600.234 -10 0 ) rotz ( 0 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.8 -0.58193 0.2 ) obj P301 /* "P3\P301.suf" atr "silver" */
+	}
+	{	mov ( 32 0 0 ) rotz ( 0 ) roty ( -90 ) rotx ( 0 )
+		scal ( 0.271685 0.271685 0.4 ) obj P215 /* "P2\P215.suf" atr "silver" */
+	}
+	{	mov ( -0.00000000001 0 0 ) rotz ( 0 ) roty ( -90 ) rotx ( 0 )
+		scal ( 0.19908 -0.19908 10.1 ) obj P215 /* "P2\P215.suf" atr "dbrown" */
+	}
+	{	mov ( -2000 0 0 ) rotz ( 0 ) roty ( -90 ) rotx ( 0 )
+		scal ( 0.271685 -0.271685 0.4 ) obj P215 /* "P2\P215.suf" atr "silver" */
+	}
+	{	mov ( -2230.51 0 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+		scal ( 0.286227 0.286227 0.8 ) obj P214 /* "P2\P214.suf" atr "silver" */
+	}
+	{	mov ( -2230.51 0 0 ) rotz ( 180 ) roty ( -90 ) rotx ( -180 )
+		scal ( 0.286227 -0.286227 0.8 ) obj P214 /* "P2\P214.suf" atr "silver" */
+	}
+}
