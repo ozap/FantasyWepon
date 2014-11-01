@@ -1,0 +1,50 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	P2\P216.suf
+	P3\P305.suf
+	P4\P403.suf
+	P4\P414.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( 419.529 -205.000   5.000 )
+	DisplayScale: 1.000000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) colormap ( "L3\effect\circle1.png" 0.500 1.000 ) mapsize ( 0 0 1 1 ) }
+	1: atr dbrown { col ( rgb ( 0.580 0.130 0.160 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	2: atr dkblue { col ( rgb ( 0.150 0.200 0.250 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	3: atr noname { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	4: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "L3\effect\circle1.png" 0.500 1.000 ) mapsize ( 0 0 1 1 ) }
+	5: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 )  70   0 -70 )
+	{	mov ( -316.095 415.916 1329.12 ) eye deg( 45 ) }
+	{	mov ( -122.806 223.503 0.473079 ) target }
+	{	mov ( -412.502 330.348 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.496413 -0.418737 0.226836 ) obj P414 /* "P4\P414.suf" atr "dbrown" */
+	}
+	{	mov ( -200 200 -5 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 2.3 0.4 0.1 ) obj P403 /* "P4\P403.suf" atr "silver" */
+	}
+	{	mov ( -200 200 -5 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( -0.75083 0.4 0.1 ) obj P403 /* "P4\P403.suf" atr "silver" */
+	}
+	{	mov ( -398 218 0 ) rotz ( 90 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.138061 0.0690306 1.08125 ) obj P216 /* "P2\P216.suf" atr "dbrown" */
+	}
+	{	mov ( -288 311 0 ) rotz ( -180 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.3 0.143969 0.2 ) obj P305 /* "P3\P305.suf" atr "dbrown" */
+	}
+}
