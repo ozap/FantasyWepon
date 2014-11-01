@@ -8,8 +8,8 @@ Parts:
 Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
 BackGround: "Fine_Basin"
 Info:
-	DisplayOffset: ( 419.529 -205.000   5.000 )
-	DisplayScale: 1.000000000000
+	DisplayOffset: (  63.132 -51.250   1.250 )
+	DisplayScale: 0.250000000000
 	MeshFlag: 1
 	MeshSpacing: 200
 	ShowStatus: 1
@@ -30,21 +30,21 @@ Palette:
 fram
 {
 	light pal( rgb ( 1.00 1.00 1.00 )  70   0 -70 )
-	{	mov ( -316.095 415.916 1329.12 ) eye deg( 45 ) }
-	{	mov ( -122.806 223.503 0.473079 ) target }
-	{	mov ( -412.502 330.348 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	{	mov ( 96.7622 118.061 971.878 ) eye deg( 45 ) }
+	{	mov ( 238.373 -22.9076 -1.54209 ) target }
+	{	mov ( -12.5016 102.348 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
 		scal ( 0.496413 -0.418737 0.226836 ) obj P414 /* "P4\P414.suf" atr "dbrown" */
 	}
-	{	mov ( -200 200 -5 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	{	mov ( 200 -28 -5 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
 		scal ( 2.3 0.4 0.1 ) obj P403 /* "P4\P403.suf" atr "silver" */
 	}
-	{	mov ( -200 200 -5 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	{	mov ( 200 -28 -5 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
 		scal ( -0.75083 0.4 0.1 ) obj P403 /* "P4\P403.suf" atr "silver" */
 	}
-	{	mov ( -398 218 0 ) rotz ( 90 ) roty ( 0 ) rotx ( -90 )
+	{	mov ( 2 -10 0 ) rotz ( 90 ) roty ( 0 ) rotx ( -90 )
 		scal ( 0.138061 0.0690306 1.08125 ) obj P216 /* "P2\P216.suf" atr "dbrown" */
 	}
-	{	mov ( -288 311 0 ) rotz ( -180 ) roty ( 0 ) rotx ( 0 )
+	{	mov ( 112 83 0 ) rotz ( -180 ) roty ( 0 ) rotx ( 0 )
 		scal ( 0.3 0.143969 0.2 ) obj P305 /* "P3\P305.suf" atr "dbrown" */
 	}
 }

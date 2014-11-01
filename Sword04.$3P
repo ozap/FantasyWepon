@@ -1,16 +1,15 @@
 /*							Parts Assembler
                                   Version 2.04.080709(:
 Parts: 
-	P2\P210.suf
-	P2\P215.suf
-	P3\P301.suf
+	P2\P216.suf
+	P3\P305.suf
 	P4\P403.suf
 	P4\P414.suf
 Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
 BackGround: "Fine_Basin"
 Info:
-	DisplayOffset: ( 122.765 -100.000   2.500 )
-	DisplayScale: 0.500000000000
+	DisplayOffset: ( 419.529 -205.000   5.000 )
+	DisplayScale: 1.000000000000
 	MeshFlag: 1
 	MeshSpacing: 200
 	ShowStatus: 1
@@ -30,94 +29,22 @@ Palette:
 */
 fram
 {
-	light pal( rgb ( 1.00 1.00 1.00 )  68 -15 -70 )
-	{	mov ( -270.859 7.00363 1347.66 ) eye deg( 45 ) }
-	{	mov ( -269.609 5.01378 1.36538 ) target }
-	{	mov ( -14.654 -62.0801 0 ) rotz ( 90 ) roty ( 0 ) rotx ( 0 )
-		scal ( 0.248206 0.413677 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( -109.502 -113.348 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
-		scal ( 0.496413 0.453883 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( 14.4596 -36.9298 -8.19039 ) rotz ( -90 ) roty ( 0 ) rotx ( 0 )
-		scal ( 0.38334 0.330942 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -117.845 -19.379 -8.19039 ) rotz ( -90 ) roty ( 0 ) rotx ( 0 )
-		scal ( 0.201133 -0.248206 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -14.654 62.0801 0 ) rotz ( -90 ) roty ( 0 ) rotx ( 0 )
-		scal ( 0.248206 -0.413677 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( -109.502 113.348 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
-		scal ( 0.496413 -0.453883 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( 14.4596 36.9298 -8.19039 ) rotz ( 90 ) roty ( 0 ) rotx ( 0 )
-		scal ( 0.38334 -0.330942 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -117.845 19.379 -8.19039 ) rotz ( 90 ) roty ( 0 ) rotx ( 0 )
-		scal ( 0.201133 0.248206 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -14.654 31.0401 53.7629 ) rotz ( -90 ) roty ( 60 ) rotx ( 0 )
-		scal ( 0.248206 -0.413677 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( -109.502 56.6738 98.1618 ) rotz ( 0 ) roty ( 0 ) rotx ( 60 )
-		scal ( 0.496413 -0.453883 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( 14.4596 25.558 27.887 ) rotz ( 90 ) roty ( -60 ) rotx ( 0 )
-		scal ( 0.38334 -0.330942 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -117.845 16.7826 12.6875 ) rotz ( 90 ) roty ( -60 ) rotx ( 0 )
-		scal ( 0.201133 0.248206 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -14.654 -31.0401 -53.7629 ) rotz ( 90 ) roty ( -60 ) rotx ( 0 )
-		scal ( 0.248206 0.413677 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( -109.502 -56.6738 -98.1618 ) rotz ( 0 ) roty ( 0 ) rotx ( 60 )
-		scal ( 0.496413 0.453883 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( 14.4596 -11.3718 -36.0774 ) rotz ( -90 ) roty ( 60 ) rotx ( 0 )
-		scal ( 0.38334 0.330942 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -117.845 -2.59641 -20.8779 ) rotz ( -90 ) roty ( 60 ) rotx ( 0 )
-		scal ( 0.201133 -0.248206 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -14.654 -31.0401 53.7629 ) rotz ( 90 ) roty ( 60 ) rotx ( 0 )
-		scal ( 0.248206 0.413677 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( -109.502 -56.6738 98.1618 ) rotz ( 0 ) roty ( 0 ) rotx ( -60 )
-		scal ( 0.496413 0.453883 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( 14.4596 -25.558 27.887 ) rotz ( -90 ) roty ( -60 ) rotx ( 0 )
-		scal ( 0.38334 0.330942 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -117.845 -16.7826 12.6875 ) rotz ( -90 ) roty ( -60 ) rotx ( 0 )
-		scal ( 0.201133 -0.248206 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -14.654 31.0401 -53.7629 ) rotz ( -90 ) roty ( -60 ) rotx ( 0 )
-		scal ( 0.248206 -0.413677 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( -109.502 56.6738 -98.1618 ) rotz ( 0 ) roty ( 0 ) rotx ( -60 )
-		scal ( 0.496413 -0.453883 0.165471 ) obj P414 /* "P4\P414.suf" atr "silver" */
-	}
-	{	mov ( 14.4596 11.3718 -36.0774 ) rotz ( 90 ) roty ( 60 ) rotx ( 0 )
-		scal ( 0.38334 -0.330942 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( -117.845 2.59641 -20.8779 ) rotz ( 90 ) roty ( 60 ) rotx ( 0 )
-		scal ( 0.201133 0.248206 0.165471 ) obj P301 /* "P3\P301.suf" atr "silver" */
-	}
-	{	mov ( 79.8206 0 0 ) rotz ( 0 ) roty ( -90 ) rotx ( 0 )
-		scal ( 0.0662642 0.0662642 2.813 ) obj P215 /* "P2\P215.suf" atr "silver" */
-	}
-	{	mov ( -461.054 0 0 ) rotz ( 0 ) roty ( -90 ) rotx ( 0 )
-		scal ( 0.106351 -0.106351 1.24103 ) obj P215 /* "P2\P215.suf" atr "brown" */
-	}
-	{	mov ( 77.1859 0 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
-		scal ( 0.145 0.145 0.145 ) obj P210 /* "P2\P210.suf" atr "silver" */
+	light pal( rgb ( 1.00 1.00 1.00 )  70   0 -70 )
+	{	mov ( -316.095 415.916 1329.12 ) eye deg( 45 ) }
+	{	mov ( -122.806 223.503 0.473079 ) target }
+	{	mov ( -412.502 330.348 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.496413 -0.418737 0.226836 ) obj P414 /* "P4\P414.suf" atr "dbrown" */
 	}
 	{	mov ( -200 200 -5 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
 		scal ( 2.3 0.4 0.1 ) obj P403 /* "P4\P403.suf" atr "silver" */
 	}
 	{	mov ( -200 200 -5 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
 		scal ( -0.75083 0.4 0.1 ) obj P403 /* "P4\P403.suf" atr "silver" */
+	}
+	{	mov ( -398 218 0 ) rotz ( 90 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.138061 0.0690306 1.08125 ) obj P216 /* "P2\P216.suf" atr "dbrown" */
+	}
+	{	mov ( -288 311 0 ) rotz ( -180 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.3 0.143969 0.2 ) obj P305 /* "P3\P305.suf" atr "dbrown" */
 	}
 }
