@@ -1,0 +1,74 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	P2\P205.suf
+	P2\P211.suf
+	P2\P214.suf
+	P2\P215.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( -229.787 -61.583  20.000 )
+	DisplayScale: 0.707106781186
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+	2: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 )   5 -70  70 )
+	{	mov ( 418.31 145.378 -1324.23 ) eye deg( 45 ) }
+	{	mov ( 336.424 50.7526 -0.421307 ) target }
+	{	mov ( 350 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 3.5 0.25 0.1 ) obj P205 /* "P2\P205.suf" atr "silver" */
+	}
+	{	mov ( -100 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.1 0.35 0.2 ) obj P211 /* "P2\P211.suf" atr "silver" */
+	}
+	{	mov ( 200 0 0 ) rotz ( -40 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.05 0.4 0.15 ) obj P205 /* "P2\P205.suf" atr "silver" */
+	}
+	{	mov ( 200 0 0 ) rotz ( 40 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.05 -0.4 0.15 ) obj P205 /* "P2\P205.suf" atr "silver" */
+	}
+	{	mov ( 301 0 0 ) rotz ( 40 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.05 -0.4 0.15 ) obj P205 /* "P2\P205.suf" atr "silver" */
+	}
+	{	mov ( 301 0 0 ) rotz ( -40 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.05 0.4 0.15 ) obj P205 /* "P2\P205.suf" atr "silver" */
+	}
+	{	mov ( 401 0 0 ) rotz ( -40 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.05 0.4 0.15 ) obj P205 /* "P2\P205.suf" atr "silver" */
+	}
+	{	mov ( 401 0 0 ) rotz ( 40 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.05 -0.4 0.15 ) obj P205 /* "P2\P205.suf" atr "silver" */
+	}
+	{	mov ( 600 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.315 0.315 0.7875 ) obj P214 /* "P2\P214.suf" atr "silver" */
+	}
+	{	mov ( 600 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 90 )
+		scal ( 0.315 -0.315 0.7875 ) obj P214 /* "P2\P214.suf" atr "silver" */
+	}
+	{	mov ( 600 32.6683 0 ) rotz ( -90 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.3675 -0.3675 0.315 ) obj P215 /* "P2\P215.suf" atr "silver" */
+	}
+	{	mov ( 250 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 2.95 0.05 0.15 ) obj P205 /* "P2\P205.suf" atr "silver" */
+	}
+	{	mov ( 600 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.2 0.2 0.9 ) obj P214 /* "P2\P214.suf" atr "silver" */
+	}
+	{	mov ( 600 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 90 )
+		scal ( 0.2 -0.2 0.9 ) obj P214 /* "P2\P214.suf" atr "silver" */
+	}
+}
