@@ -19,16 +19,16 @@ Info:
 	SelectedOnly: 0
 	DispRelative: 0
 Palette:
-	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
-	1: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
 	2: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
 */
 fram
 {
-	light pal( rgb ( 1.00 1.00 1.00 )  64  28 -70 )
-	{	mov ( -709.102 459.845 712.073 ) eye deg( 45 ) }
+	light pal( rgb ( 1.00 1.00 1.00 )   2  70 -70 )
+	{	mov ( 292.045 9.90023 1327.92 ) eye deg( 45 ) }
 	{	mov ( 336.424 50.7526 -0.421307 ) target }
-	{	mov ( -100 0 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
+	{	mov ( -100 0 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
 		scal ( 0.1 0.1 3.5 ) obj P215 /* "P2\P215.suf" atr "brown" */
 	}
 	{	mov ( 599.813 -26.7767 0 ) rotz ( 44.5086 ) roty ( 0 ) rotx ( 0 )
