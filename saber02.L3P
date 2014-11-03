@@ -1,0 +1,50 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	JT\JT16.suf
+	P1\P114.suf
+	P2\P216.suf
+	P3\P309.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( -288.393   0.000   0.000 )
+	DisplayScale: 1.000000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+	1: atr silver { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+	2: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -55  44  70 )
+	{	mov ( 338.947 -920.88 -277.476 ) eye deg( 45 ) }
+	{	mov ( 241.496 -14.8649 -5.82357 ) target }
+	{	mov ( -75.9584 0 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.0627078 0.0712123 0.178593 ) obj P114 /* "P1\P114.suf" atr "yellow" */
+	}
+	{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.25 0.25 0.25 ) obj P114 /* "P1\P114.suf" atr "yellow" */
+	}
+	{	mov ( -28.0797 0 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+		scal ( 0.075 0.075 0.55 ) obj P216 /* "P2\P216.suf" atr "brown" */
+	}
+	{	mov ( -35.8579 0 3.53553 ) rotz ( -90 ) roty ( 0 ) rotx ( -180 )
+		scal ( 0.6 0.15 0.3 ) obj JT16 /* "JT\JT16.suf" atr "yellow" */
+	}
+	{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.1 0.1 0.05 ) obj P309 /* "P3\P309.suf" atr "silver" */
+	}
+	{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.1 0.1 -0.05 ) obj P309 /* "P3\P309.suf" atr "silver" */
+	}
+}
