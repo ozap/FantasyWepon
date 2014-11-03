@@ -1,0 +1,62 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	P2\P211.suf
+	P2\P214.suf
+	P2\P215.suf
+	P2\P216.suf
+	T1\T104.suf
+	T1\T105.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( -1116.765   0.000   0.000 )
+	DisplayScale: 3.999999999998
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+	1: atr dbrwn { col ( rgb ( 0.580 0.130 0.160 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+	2: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	3: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -41  57 -70 )
+	{	mov ( 137.511 -694.131 1002.69 ) eye deg( 45 ) }
+	{	mov ( 244.986 -5.44786 29.0997 ) target }
+	{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.8 0.2 0.1 ) obj T105 /* "T1\T105.suf" atr "silver" */
+	}
+	{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 1.8 0.2 -0.1 ) obj T105 /* "T1\T105.suf" atr "silver" */
+	}
+	{	mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.2 1 0.2 ) obj P211 /* "P2\P211.suf" atr "yellow" */
+	}
+	{	mov ( -76 0 0 ) rotz ( 0 ) roty ( -90 ) rotx ( 0 )
+		scal ( 0.0496397 0.129022 0.9 ) obj P216 /* "P2\P216.suf" atr "brown" */
+	}
+	{	mov ( 20 0 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.0914356 0.2 3.55 ) obj P214 /* "P2\P214.suf" atr "brown" */
+	}
+	{	mov ( 717.882 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.35 0.3 0.153191 ) obj T104 /* "T1\T104.suf" atr "dbrwn" */
+	}
+	{	mov ( 20.804 0 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+		scal ( 0.103207 0.220575 0.206413 ) obj P215 /* "P2\P215.suf" atr "dbrwn" */
+	}
+	{	mov ( 255.563 0 0 ) rotz ( -180 ) roty ( 90 ) rotx ( -180 )
+		scal ( 0.0966624 -0.206588 0.193325 ) obj P215 /* "P2\P215.suf" atr "dbrwn" */
+	}
+	{	mov ( 276.287 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.05 0.05 0.212704 ) obj P216 /* "P2\P216.suf" atr "silver" */
+	}
+}
