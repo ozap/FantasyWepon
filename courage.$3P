@@ -1,13 +1,13 @@
 /*							Parts Assembler
                                   Version 2.04.080709(:
 Parts: 
-	AN\AN08.suf
-	P3\P311.suf
+	JT\JT14.suf
+	P2\P216.suf
 Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
 BackGround: "Fine_Basin"
 Info:
-	DisplayOffset: ( -148.063  22.284   0.000 )
-	DisplayScale: 1.000000000000
+	DisplayOffset: ( -209.500   0.000 -24.080 )
+	DisplayScale: 0.500000000000
 	MeshFlag: 1
 	MeshSpacing: 200
 	ShowStatus: 1
@@ -18,19 +18,29 @@ Info:
 	SelectedOnly: 0
 	DispRelative: 0
 Palette:
-	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
-	1: atr silver { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
-	2: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	0: atr "#01" { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	2: atr silver { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+	3: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
 */
 fram
 {
-	light pal( rgb ( 1.00 1.00 1.00 )  55 -43  70 )
-	{	mov ( 171.729 16.9775 -1262.55 ) eye deg( 45 ) }
-	{	mov ( 172.003 14.7904 0.360646 ) target }
-	{	mov ( 500 0 0 ) rotz ( -90 ) roty ( 0 ) rotx ( 90 )
-		scal ( 0.4 0.0545194 5 ) obj P311 /* "P3\P311.suf" atr "silver" */
+	light pal( rgb ( 1.00 1.00 1.00 )  13  69 -70 )
+	{	mov ( 200.564 -37.275 1243.55 ) eye deg( 45 ) }
+	{	mov ( 202.36 -36.0579 0.590509 ) target }
+	{	mov ( 4.751 23.1377 0 ) rotz ( -82.2412 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.426641 0.0274425 1.04584 ) obj JT14 /* "JT\JT14.suf" atr "silver" */
 	}
-	{	mov ( -67 31 0 ) rotz ( -90 ) roty ( 0 ) rotx ( -90 )
-		scal ( 0.2 0.1 0.3 ) obj an08 /* "AN\AN08.suf" atr "brown" */
+	{	mov ( 647.629 -84.3418 0 ) rotz ( 73.5995 ) roty ( 0 ) rotx ( -90 )
+		scal ( -0.55 0.05 1.15 ) obj JT14 /* "JT\JT14.suf" atr "silver" */
+	}
+	{	mov ( -144 -26 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+		scal ( 0.1 0.2 1.05 ) obj P216 /* "P2\P216.suf" atr "brown" */
+	}
+	{	mov ( -28 -26 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+		scal ( 0.1 0.2 0.15 ) obj P216 /* "P2\P216.suf" atr "brown" */
+	}
+	{	mov ( -244 -26 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+		scal ( 0.1 0.2 0.15 ) obj P216 /* "P2\P216.suf" atr "brown" */
 	}
 }

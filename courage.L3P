@@ -34,13 +34,13 @@ fram
 	{	mov ( 647.629 -84.3418 0 ) rotz ( 73.5995 ) roty ( 0 ) rotx ( -90 )
 		scal ( -0.55 0.05 1.15 ) obj JT14 /* "JT\JT14.suf" atr "silver" */
 	}
-	{	mov ( -144 -26 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+	{	mov ( -144 -26 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
 		scal ( 0.1 0.2 1.05 ) obj P216 /* "P2\P216.suf" atr "brown" */
 	}
-	{	mov ( -28 -26 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+	{	mov ( -28 -26 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
 		scal ( 0.1 0.2 0.15 ) obj P216 /* "P2\P216.suf" atr "brown" */
 	}
-	{	mov ( -244 -26 0 ) rotz ( 180 ) roty ( 90 ) rotx ( 180 )
+	{	mov ( -244 -26 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
 		scal ( 0.1 0.2 0.15 ) obj P216 /* "P2\P216.suf" atr "brown" */
 	}
 }
