@@ -1,0 +1,46 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	JT\JT14.suf
+	P2\P216.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: (  52.805   6.894 -12.040 )
+	DisplayScale: 0.250000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr "#01" { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr brown { col ( rgb ( 0.400 0.400 0.450 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	2: atr silver { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) colormap ( "C:\Users\ozaki\Documents\dogacga\data\unity\shade50p.JPG" ) mapsize ( 0 0 1 1 ) }
+	3: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -26  65 -70 )
+	{	mov ( 586.661 -34.0923 2033.78 ) eye deg( 45 ) }
+	{	mov ( 588.069 -30.8345 0.382499 ) target }
+	{	mov ( 706.505 45.7154 0 ) rotz ( 89.463 ) roty ( 0 ) rotx ( -90 )
+		scal ( -0.3 0.05 1.15 ) obj JT14 /* "JT\JT14.suf" atr "silver" */
+	}
+	{	mov ( -4.03416 -8.70309 0 ) rotz ( 3.60089 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.1 0.2 1.6 ) obj P216 /* "P2\P216.suf" atr "brown" */
+	}
+	{	mov ( 160.404 2.08556 0 ) rotz ( 3.60089 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.1 0.2 0.15 ) obj P216 /* "P2\P216.suf" atr "brown" */
+	}
+	{	mov ( -188.44 -19.3526 0 ) rotz ( 3.60089 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.1 0.1408 0.4 ) obj P216 /* "P2\P216.suf" atr "brown" */
+	}
+	{	mov ( 706.505 45.7154 0 ) rotz ( -88.9805 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.3 0.05 1.15 ) obj JT14 /* "JT\JT14.suf" atr "silver" */
+	}
+}

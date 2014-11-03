@@ -1,0 +1,48 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	JT\JT14.suf
+	P2\P215.suf
+	P2\P216.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( -78.739 -28.335   0.000 )
+	DisplayScale: 0.250000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr black { col ( rgb ( 0.150 0.200 0.250 ) ) amb ( 0.330 ) dif ( 0.800 ) spc ( 0.050 0.100 0.000 ) }
+	1: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	2: atr silver { col ( rgb ( 0.850 0.850 0.800 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	3: atr wh { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	4: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 )  69 -13 -70 )
+	{	mov ( -77.1775 323.265 2970.48 ) eye deg( 45 ) }
+	{	mov ( 204.698 -92.6907 -0.289084 ) target }
+	{	mov ( 1000 0 0 ) rotz ( 0 ) roty ( -90 ) rotx ( 0 )
+		scal ( 0.102331 0.102331 10 ) obj P215 /* "P2\P215.suf" atr "brown" */
+	}
+	{	mov ( 1000 0 0 ) rotz ( 0 ) roty ( 90 ) rotx ( 0 )
+		scal ( 0.157114 0.157114 0.5232 ) obj P216 /* "P2\P216.suf" atr "yellow" */
+	}
+	{	mov ( 1190.72 -7.89492 0 ) rotz ( -110 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.3 0.05 0.55 ) obj JT14 /* "JT\JT14.suf" atr "silver" */
+	}
+	{	mov ( 1190.72 -7.89492 0 ) rotz ( 70 ) roty ( 0 ) rotx ( -90 )
+		scal ( -0.3 0.05 0.3 ) obj JT14 /* "JT\JT14.suf" atr "silver" */
+	}
+	{	mov ( -1000 0 0 ) rotz ( 0 ) roty ( -90 ) rotx ( 0 )
+		scal ( -0.157114 0.157114 0.5232 ) obj P216 /* "P2\P216.suf" atr "yellow" */
+	}
+}

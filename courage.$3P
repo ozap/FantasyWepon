@@ -1,0 +1,36 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	AN\AN08.suf
+	P3\P311.suf
+Light: (   50  -50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "Fine_Basin"
+Info:
+	DisplayOffset: ( -148.063  22.284   0.000 )
+	DisplayScale: 1.000000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr brown { col ( rgb ( 1.000 0.200 0.050 ) ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+	1: atr silver { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+	2: atr yellow { col ( rgb ( 0.670 0.690 0.220 ) ) amb ( 0.200 ) dif ( 0.800 ) ref ( 0.300 ) spc ( 0.900 1.000 0.650 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 )  55 -43  70 )
+	{	mov ( 171.729 16.9775 -1262.55 ) eye deg( 45 ) }
+	{	mov ( 172.003 14.7904 0.360646 ) target }
+	{	mov ( 500 0 0 ) rotz ( -90 ) roty ( 0 ) rotx ( 90 )
+		scal ( 0.4 0.0545194 5 ) obj P311 /* "P3\P311.suf" atr "silver" */
+	}
+	{	mov ( -67 31 0 ) rotz ( -90 ) roty ( 0 ) rotx ( -90 )
+		scal ( 0.2 0.1 0.3 ) obj an08 /* "AN\AN08.suf" atr "brown" */
+	}
+}
